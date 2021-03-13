@@ -1,4 +1,4 @@
-import pygame, threading, socket, re
+import pygame, threading, socket
 from pygame.locals import *
 
 #Initialize the client
@@ -7,9 +7,6 @@ client.connect(("127.0.0.1", 5050))
 
 #Initialize pygame
 pygame.init()
-
-#Set display
-WINDOW_SIZE = (600,400) # set up window size
 
 display = pygame.display.set_mode((600, 600))
 clock = pygame.time.Clock()
