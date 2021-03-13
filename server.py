@@ -39,12 +39,7 @@ def handle_client(conn, addr, x):
       
       while connected:
             data = conn.recv(6000)
-            #print(f"{is_player_1} {data}")
-
-           # print(data.split(',')[0].replace('(', ''))
-
-            #print(data)
-
+            
             if is_player_1:
                   try:
                         players[1].send(bytes(data))
